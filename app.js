@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var Book = require("./book.model");
-var port = 2000;
+var port = process.env.PORT || 2000;
 
 var db = "mongodb://localhost";
 
